@@ -33,7 +33,7 @@ global.APIKeys = { // APIKey nya disini
 global.packname = 'Naruto'
 global.author = 'By Rafi Ser'
 
-global.wm = '© ariffb & melcanz'
+global.wm = '© Naruto By Rafi Ser'
 global.wait = '_*wait for processing...*_'
 global.eror = '_*Server Error*_'
 global.benar = '✅'
