@@ -38,9 +38,9 @@ ${bahasa.map(v => `${v.code} : ${v.country}`).join`\n`}
         if (result) m.reply(result[0])
     }
 }
-handler.help = ['translate'].map(v => v + ' <lang> <teks>')
+handler.help = ['trt'].map(v => v + ' <lang> <teks>')
 handler.tags = ['tools']
-handler.command = /^(tr(anslate)?)$/i
+handler.command = /^(tr(t)?)$/i
 
 module.exports = handler
 
