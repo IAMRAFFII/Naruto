@@ -16,8 +16,8 @@ let handler = async (m, { conn, usedPrefix, command }) => {
     conn.sendFile(m.chat, audio, '', '', m, 1, { mimetype: 'audio/mp4' })
   }
 }
-handler.help = ['tomp3', 'tovn']
+handler.help = ['mp3', 'tovn']
 handler.tags = ['audio']
-handler.command = /^to(mp3|a(udio)?|vn|ptt)$/i
+handler.command = /^m(p3|a(udio)?|vn|ptt)$/i
 
 module.exports = handler
