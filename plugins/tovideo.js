@@ -21,6 +21,6 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 }
 handler.help = ['mp4']
 handler.tags = ['sticker']
-handler.command = /^(mp4|vid(eo)?))$/i
+handler.command = /^(m(p4|vid(eo)?))$/i
 
 module.exports = handler
