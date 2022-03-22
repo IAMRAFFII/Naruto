@@ -29,7 +29,7 @@ const defaultMenu = {
   footer: '└────\n',
   after: `
 *%Naruto@^%2.2.1.1*
-${'```%Killadism Never End💥```'}
+${'```Killadism Never End💥```'}
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
