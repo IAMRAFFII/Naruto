@@ -25,7 +25,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     }
   } finally {
     if (stiker) await conn.sendFile(m.chat, stiker, '', '', m, 0, { asSticker: true })
-    else throw `Balas stiker dengan perintah *${usedPrefix + command} <pack name>|<author>*`
+    else throw `Reply sticker with command *${usedPrefix + command} <pack name>,<author>*`
   }
 }
 handler.help = ['take <pack name>|<author>']
