@@ -1,7 +1,7 @@
 {
-  "name": "stikerinbot",
+  "name": "Naruto By Rafi Ser",
   "version": "1.1.2",
-  "description": "WhatsApp Bot Ringan",
+  "description": "whatsapp Bot By Rafi Ser",
   "main": "index.js",
   "directories": {
     "lib": "lib",
@@ -19,7 +19,7 @@
   "keywords": [
     "whatsapp-bot"
   ],
-  "author": "Ariffb",
+  "author": "Rafi",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ariffb25/stikerinbot/issues"
