@@ -413,16 +413,16 @@ function ucapan() {
   const time = moment.tz('Asia/kolkata').format('HH')
   res = "Selamat dinihari"
   if (time >= 4) {
-    res = "Selamat pagi"
+    res = "Good Morning💖"
   }
   if (time > 10) {
-    res = "Selamat siang"
+    res = "Good Afternoon❤️"
   }
   if (time >= 15) {
-    res = "Selamat sore"
+    res = "Good Evening💛"
   }
   if (time >= 18) {
-    res = "Selamat malam"
+    res = "Good night🖤"
   }
   return res
 }
