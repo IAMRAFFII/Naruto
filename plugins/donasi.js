@@ -4,8 +4,8 @@ let handler = async (m, { conn }) => await conn.sendButtonLoc(m.chat, fla + 'Don
 ├ https://trakteer.id/ariffb/tip
 └────
 `.trim(), '© Naruto By Rafi Ser', 'Donation', '.donation', m)
-handler.help = ['donnation']
+handler.help = ['donation']
 handler.tags = ['info']
-handler.command = /^dona(ti|on)$/i
+handler.command = /^dona(tion|donate)$/i
 
 module.exports = handler
