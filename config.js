@@ -30,8 +30,8 @@ global.APIKeys = { // APIKey nya disini
 }
 
 // Sticker WM
-global.packname = 'Naruto'
-global.author = 'By Rafi Ser'
+global.packname = 'Naruto🥵'
+global.author = 'Rafi Ser🍭'
 
 global.wm = '© Naruto By Rafi Ser'
 global.wait = '_*wait for processing...*_'
