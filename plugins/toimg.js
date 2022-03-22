@@ -17,12 +17,12 @@ let handler = async (m, { conn, usedPrefix, command }) => {
     im.stdin.write(sticker)
     im.stdin.end()
     im.on('exit', () => {
-      conn.sendFile(m.chat, Buffer.concat(bufs), '', '© stikerin', m)
+      conn.sendFile(m.chat, Buffer.concat(bufs), '', '© Naruto By Rafi Ser', m)
     })
   }
 }
-handler.help = ['toimg']
+handler.help = ['photo']
 handler.tags = ['sticker']
-handler.command = /^toimg$/i
+handler.command = /^photo$/i
 
 module.exports = handler 
