@@ -19,7 +19,7 @@ const defaultMenu = {
 ├ Waktu: *%time*
 │
 ├ Uptime: *%uptime (%muptime)*
-├ Database: %rtotalreg dari %totalreg
+├ Database: %rtotalreg from %totalreg
 ├ Github:
 ├ https://github.com/Luciferking1/Naruto
 └────
@@ -410,7 +410,7 @@ function clockString(ms) {
   return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
 }
 function ucapan() {
-  const time = moment.tz('Asia/Jakarta').format('HH')
+  const time = moment.tz('Asia/kolkata').format('HH')
   res = "Selamat dinihari"
   if (time >= 4) {
     res = "Selamat pagi"
