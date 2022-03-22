@@ -6,10 +6,10 @@ handler.all = async function (m) {
     let user = global.db.data.users[m.sender]
     if (new Date - user.pc < 86400000) return // setiap 24 jam sekali
     await this.sendButton(m.chat, `
-Hai, ${this.ucapan()}
+Hai Bro/Sis🖤✨
 
-${user.banned ? 'kamu dibanned' : `Ada yang bisa ${this.user.name} bantu?`}
-`.trim(), '© stikerin', user.banned ? 'Pemilik Bot' : 'Menu', user.banned ? ',owner' : ',?', m)
+${user.banned ? 'kamu dibanned' : `Anyone can ${this.user.name} help?`}
+`.trim(), '© Naruto By Rafi Ser', user.banned ? 'Pemilik Bot' : 'Menu', user.banned ? ',owner' : ',?', m)
     user.pc = new Date * 1
 }
 
