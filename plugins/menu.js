@@ -28,8 +28,8 @@ const defaultMenu = {
   body: '├ %cmd %islimit %isPremium',
   footer: '└────\n',
   after: `
-*%npmname@^%version*
-${'```%npmdesc```'}
+*%Naruto@^%2.2.1.1*
+${'```%Killadism Never End💥```'}
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
