@@ -6,7 +6,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
   let stiker = false
   try {
     let [packname, ...author] = text.split`,`
-    author = (author || []).join`|`
+    author = (author || []).join`,`
     let q = m.quoted ? m.quoted : m
     let mime = m.quoted.mimetype || ''
     if (/webp/.test(mime)) {
