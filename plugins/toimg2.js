@@ -11,8 +11,8 @@ let handler = async (m, { conn, usedPrefix, command }) => {
   }
   await conn.sendFile(m.chat, out, 'out.png', '© Naruto By Rafi Ser', m, false, { thumbnail: out })
 }
-handler.help = ['toimg']
+handler.help = ['photo']
 handler.tags = ['sticker']
-handler.command = ['toimg']
+handler.command = ['photo']
 
 module.exports = handler
