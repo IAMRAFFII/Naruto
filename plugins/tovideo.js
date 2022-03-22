@@ -19,8 +19,8 @@ let handler = async (m, { conn, usedPrefix, command }) => {
     }
     await conn.sendFile(m.chat, out, 'out.mp4', '© stikerin', m, 0, { thumbnail: out })
 }
-handler.help = ['tovideo']
+handler.help = ['mp4']
 handler.tags = ['sticker']
-handler.command = /^(to(mp4|vid(eo)?))$/i
+handler.command = /^(mp4|vid(eo)?))$/i
 
 module.exports = handler
