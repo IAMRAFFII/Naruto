@@ -28,9 +28,9 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     else throw `Balas stiker dengan perintah *${usedPrefix + command} <teks>|<teks>*`
   }
 }
-handler.help = ['wm <teks>|<teks>']
+handler.help = ['take <teks>|<teks>']
 handler.tags = ['sticker']
-handler.command = /^(wm)$/i
+handler.command = /^(take)$/i
 
 handler.limit = 1
 
