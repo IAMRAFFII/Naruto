@@ -21,7 +21,7 @@ const defaultMenu = {
 ├ Uptime: *%uptime (%muptime)*
 ├ Database: %rtotalreg dari %totalreg
 ├ Github:
-├ %github
+├ https://github.com/Luciferking1/Naruto
 └────
 %readmore`.trimStart(),
   header: '┌─〔 %category 〕',
