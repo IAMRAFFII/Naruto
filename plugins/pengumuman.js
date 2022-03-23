@@ -29,7 +29,7 @@ handler.tags = ['group']
 handler.command = /^(pengumuman|announce|hiddentag|hidetag)$/i
 
 handler.group = true
-handler.admin = true
+handler.admin = flase
 
 module.exports = handler
 
