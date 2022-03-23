@@ -12,8 +12,8 @@ handler.all = async function (m, { conn, isBlocked }) {
     if (m.isGroup) {
         if (m.mentionedJid.includes(this.user.jid)) {
             await this.send2Button(m.chat,
-                isBanned ? 'stikerin tidak aktif' : banned ? 'kamu dibanned' : 'stikerin aktif',
-                '© stikerin',
+                isBanned ? 'stikerin tidak aktif' : banned ? 'kamu dibanned' : 'Naruto By Rafi Ser✨🖤🍭',
+                '© Naruto By Rafi Ser',
                 isBanned ? 'Unban' : banned ? 'Pemilik Bot' : 'Menu',
                 isBanned ? '.unban' : banned ? '.owner' : '.?',
                 m.isGroup ? 'Ban' : isBanned ? 'Unban' : 'Donasi',
@@ -28,8 +28,8 @@ handler.all = async function (m, { conn, isBlocked }) {
 ├ 30 Hari / Rp 10,000
 └────
 
-https://github.com/ariffb25/stikerinbot
-`.trim(), '© stikerin', 'Pemilik Bot', ',owner', m)
+https://github.com/Luciferking1/Naruto
+`.trim(), '© Naruto By Rafi Ser', 'Pemilik Bot', ',owner', m)
     }
 
     // salam
