@@ -21,14 +21,14 @@ const defaultMenu = {
 ├ Uptime: *%uptime (%muptime)*
 ├ Database: %rtotalreg from %totalreg
 ├ Github:
-├ https://github.com/Luciferking1/Naruto
+├ Not Released🌚
 └────
 %readmore`.trimStart(),
   header: '┌─〔 %category 〕',
   body: '├ %cmd %islimit %isPremium',
   footer: '└────\n',
   after: `
-*%Naruto@^%2.2.1.1*
+*©Naruto@v.r 2.2.1.1*
 ${'```Killadism Never End💥```'}
 `,
 }
