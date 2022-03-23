@@ -39,7 +39,7 @@ global.eror = '_*Server Error Try .song <link>*_'
 global.benar = '✅'
 global.salah = '❌'
 global.dikit = 'a little more'
-global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=700&scaleHeight=400&fontsize=90&fillTextType=2&fillTextPattern=Warning!&fillColor1Color=%23f2aa5g&fillColor2Color=%23f2aa5g&fillColor3Color=%23f2aa5g&fillColor4Color=%23f2aa5g&fillColor5Color=%23f2aa5g&fillColor6Color=%23f2aa5g&fillColor7Color=%23f2aa5g&fillColor8Color=%23f2aa5g&fillColor9Color=%23f2aa5g&fillColor10Color=%23f2aa5g&fillOutlineColor=%23f2aa5g&fillOutline2Color=%23f2aa5g&backgroundColor=%23101450&text='
+global.fla = 'https://i.imgur.com/sluCLer.jpg'
 
 global.multiplier = 69 // Semakin tinggi, semakin sulit naik level
 
