@@ -9,12 +9,13 @@ let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) =
   try {
     let { dl_link, thumb, title, filesize, filesizeF } = await ytv(args[0], servers.includes(server) ? server : servers[0])
     let isLimit = (isPrems || isOwner ? 99 : limit) * 1024 < filesize
-    m.reply(isLimit ? `Ukuran File: ${filesizeF}\nSize Of file On ${limit} MB, download alone: ${dl_link}` : wait)
+    m.reply(isLimit ? `Size Of File: ${filesizeF}\nLimit Size For Uploding file On Whatsapp ${limit} MB, download Your Video In Here : ${dl_link}` : wait)
     let _thumb = {}
     try { _thumb = { thumbnail: await (await fetch(thumb)).buffer() } }
     catch (e) { }
     if (!isLimit) conn.sendFile(m.chat, dl_link, title + '.mp4', `
-*Judul:* ${title}
+*Title:* ${title}
+
 *Size Of File:* ${filesizeF}
   `.trim(), m, 0, {
       ..._thumb,
