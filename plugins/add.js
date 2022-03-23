@@ -4,7 +4,7 @@ let handler = async (m, { conn, text, participants, usedPrefix, command }) => {
   if (m.quoted) {
     await conn.groupAdd(m.chat, [m.quoted.sender]).catch(_ => _)
   }
-  if (!text) throw `uhm.. nomornya mana?\n\ncontoh:\n\n${usedPrefix + command + ' ' + global.owner[0]}`
+  if (!text) throw `uhm.. what's the number??\n\nExample:\n\n${usedPrefix + command + ' ' + global.owner[0]}`
   let _participants = participants.map(user => user.jid)
   let users = (await Promise.all(
     text.split(',')
@@ -16,7 +16,7 @@ let handler = async (m, { conn, text, participants, usedPrefix, command }) => {
       ])
   )).filter(v => v[1]).map(v => v[0] + '@c.us')
   let response = await conn.groupAdd(m.chat, users)
-  if (response[users] == 408) throw `_Gagal!_\n\nNomor tersebut telah keluar baru² ini\nHanya bisa masuk lewat *${usedPrefix}link* grup`
+  if (response[users] == 408) throw `_Fail!_\n\nThe number has been out recently\nCan only enter through *${usedPrefix}link* grup`
   let pp = await conn.getProfilePicture(m.chat).catch(_ => false)
   let jpegThumbnail = pp ? await (await fetch(pp)).buffer() : false
   for (let user of response.participants.filter(user => Object.values(user)[0].code == 403)) {
@@ -24,7 +24,7 @@ let handler = async (m, { conn, text, participants, usedPrefix, command }) => {
       invite_code,
       invite_code_exp
     }]] = Object.entries(user)
-    let teks = `Mengundang @${jid.split`@`[0]} menggunakan invite...`
+    let teks = `Inviting @${jid.split`@`[0]} using invite...`
     m.reply(teks, null, {
       contextInfo: {
         mentionedJid: conn.parseMention(teks)
