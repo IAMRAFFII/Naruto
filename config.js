@@ -35,7 +35,7 @@ global.author = 'ʀᴀғɪ sᴇʀ🍭'
 
 global.wm = '© Naruto By Rafi Ser'
 global.wait = '_*wait for processing...*_'
-global.eror = '_*Server Error*_'
+global.eror = '_*Server Error Try .song <link>*_'
 global.benar = '✅'
 global.salah = '❌'
 global.dikit = 'a little more'
