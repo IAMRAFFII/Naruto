@@ -42,7 +42,7 @@ handler.command = /^(add|\+)$/i
 handler.group = true
 handler.admin = true
 handler.botAdmin = true
-handler.limit = false
+handler.limit = true
 
 module.exports = handler
 
