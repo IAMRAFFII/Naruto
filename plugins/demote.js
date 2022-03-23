@@ -7,7 +7,6 @@ let handler = async (m, { conn, participants }) => {
   for (let user of users) await conn.groupDemoteAdmin(m.chat, [user]).catch(console.log)
 }
 handler.help = ['demote', 'member', '↓'].map(v => v + ' @user')
-handler.tags = ['admin']
 
 handler.command = /^(demote|member|↓)$/i
 
