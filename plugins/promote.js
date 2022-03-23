@@ -4,7 +4,6 @@ let handler = async (m, { conn, participants }) => {
   for (let user of users) await conn.groupMakeAdmin(m.chat, [user]).catch(console.log)
 }
 handler.help = ['promote','admin','^', '↑'].map(v => v + ' @user')
-handler.tags = ['admin']
 
 handler.command = /^(promote|admin|\^|↑)$/i
 
