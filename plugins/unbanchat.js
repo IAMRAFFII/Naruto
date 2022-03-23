@@ -11,7 +11,7 @@ let handler = async (m, { conn, isOwner, text, isAdmin }) => {
   try {
     if (who.endsWith('g.us')) db.data.chats[who].isBanned = false
     else db.data.users[who].banned = false
-    m.reply(`${conn.user.name} now active chat ${conn.getName(who) == undefined ? 'this' : conn.getName(who)}.`)
+    m.reply(`${conn.user.name} now active to chat ${conn.getName(who) == undefined ? 'this' : conn.getName(who)}.`)
   } catch (e) {
     throw `the number is not in the database!`
   }
