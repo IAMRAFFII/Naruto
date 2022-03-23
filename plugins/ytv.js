@@ -17,6 +17,8 @@ let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) =
 *Title:* ${title}
 
 *Size Of File:* ${filesizeF}
+
+© naruto By Rafi Ser
   `.trim(), m, 0, {
       ..._thumb,
       asDocument: chat.useDocument
