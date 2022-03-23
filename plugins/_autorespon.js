@@ -12,12 +12,12 @@ handler.all = async function (m, { conn, isBlocked }) {
     if (m.isGroup) {
         if (m.mentionedJid.includes(this.user.jid)) {
             await this.send2Button(m.chat,
-                isBanned ? 'stikerin tidak aktif' : banned ? 'kamu dibanned' : 'Naruto By Rafi Ser✨🖤🍭',
+                isBanned ? 'naruto is not active' : banned ? 'you are banned' : 'Naruto By Rafi Ser✨🖤🍭',
                 '© Naruto By Rafi Ser',
-                isBanned ? 'Unban' : banned ? 'Pemilik Bot' : 'Menu',
+                isBanned ? 'Unban' : banned ? 'Bot Owner' : 'Menu',
                 isBanned ? '.unban' : banned ? '.owner' : '.?',
-                m.isGroup ? 'Ban' : isBanned ? 'Unban' : 'Donasi',
-                m.isGroup ? '.ban' : isBanned ? '.unban' : '.donasi', m)
+                m.isGroup ? 'Ban' : isBanned ? 'Unban' : 'Donate',
+                m.isGroup ? '.ban' : isBanned ? '.unban' : '.donation', m)
         }
     }
 
@@ -29,7 +29,7 @@ handler.all = async function (m, { conn, isBlocked }) {
 └────
 
 https://github.com/Luciferking1/Naruto
-`.trim(), '© Naruto By Rafi Ser', 'Pemilik Bot', ',owner', m)
+`.trim(), '© Naruto By Rafi Ser', 'Bot Owner', ',owner', m)
     }
 
     // salam
