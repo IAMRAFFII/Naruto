@@ -31,7 +31,7 @@ global.APIKeys = { // APIKey nya disini
 
 // Sticker WM
 global.packname = 'ɴᴀʀᴜᴛᴏ🥵'
-global.author = 'ʀᴀғɪ sᴇʀ🍭'
+global.author = 'whatsapp Bot💖'
 
 global.wm = '© Naruto By Rafi Ser'
 global.wait = '*processing... please wait*'
