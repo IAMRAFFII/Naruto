@@ -1,4 +1,4 @@
-let limit = 50
+let limit = 70
 let fetch = require('node-fetch')
 const { servers, ytv } = require('../lib/y2mate')
 
