@@ -33,7 +33,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
 *Size Of File Video:* ${yt2.filesizeF}
 
 *Server y2mate:* ${usedServer}
-`.trim(), '© Naruto By Rafi Ser', '🎵Audio🔊', `.yta ${vid.url}`, '🎥Video🎦', `.yt ${vid.url}`)
+`.trim(), '© Naruto By Rafi Ser', '🎵Audio🔊', `.yta ${vid.url}`, '🎥Video🎦', `.video ${vid.url}`)
 }
 handler.help = ['song'].map(v => v + ' <pencarian>')
 handler.tags = ['downloader']
