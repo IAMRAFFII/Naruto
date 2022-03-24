@@ -11,35 +11,35 @@ let handler = async (m, { conn, usedPrefix, args, command }) => {
 
   if (!args[0] || args[0] == "help") return m.reply(`*❏  W A R - Z O N E*
 
-[1] War Zone adalah game perang dengan sistem _turn attack_ atau menyerang secara bergiliran
-[2] Permainan dapat dimulai dengan 1v1 sampai dengan 5v5
-[3] Modal perang adalah harta rampasan perang jika tim kamu menang
-[4] Setiap pemain akan mendapatkan 5000 HP (Health Point)
-[5] Keberhasilan menyerang tergantung level kamu dengan level musuh yang akan diserang
-[6] Kesempatan menyerang adalah 40 detik, lebih dari itu dianggap AFK (pengurangan 2500 HP)
-[7] Sebuah tim akan menang jika tim lawan kalah semua (HP <= 0) dan mendapatkan harta rampasan perang
+[1] War Zone is a war game with a turn attack system or take turns
+[2] The game can start with 1v1 up to 5v5
+[3] War capital is the spoils of war if your team wins
+[4] Each player will get 5000 HP (Health Point)
+[5] The success of the attack depends on your level with the level of the enemy to be attacked
+[6] Attack chance is 40 seconds, more than that is considered AFK (2500 HP reduction)
+[7] A team will win if the opposing team loses all (HP <= 0) and gets the spoils of war
 
 *❏  C O M M A N D S*
 *${usedPrefix + command} join A/B* = join game
 *${usedPrefix + command} left* = left game
-*${usedPrefix + command} money 10xx* = uang taruhan
+*${usedPrefix + command} money 10xx* = bet money
 *${usedPrefix + command} player* = player game
 *${usedPrefix + command} start* = start game`)
 
 
   if (args[0] == "money"){
-    if (!(m.chat in conn.war)) return m.reply(`*Silahkan buat room terlebih dahulu (Ketik .war join)*`)
+    if (!(m.chat in conn.war)) return m.reply(`*Please create a room first (Type .war join)*`)
     if(m.sender == conn.war[m.chat][0].user){
       if (args[1] != "undefined" && !isNaN(Number(args[1]))){
         args[1] = Number(args[1])
-        if (args[1] < 1000000) return m.reply('*Minimal Rp. 1.000.000*')
+        if (args[1] < 1000000) return m.reply('*Minimum Rp. 1.000.000*')
         conn.war2[m.chat].money = args[1]
-        return m.reply("*Berhasil menetapkan modal perang sebesar Rp. " + Number(args[1]).toLocaleString() + "*")
+        return m.reply("*Successfully set a war capital of Rp. " + Number(args[1]).toLocaleString() + "*")
       }else {
-        return m.reply("*Masukkan modal taruhan perang berupa angka (boleh menggunakan titik)*\n\n.war money 100.000.000")
+        return m.reply("*Enter the war bet capital in the form of numbers (may use dots)*\n\n.war money 100.000.000")
       }
     }else {
-      return conn.reply(m.chat,`*Hanya @${conn.war[m.chat][0].user.split('@')[0]} sebagai pembuat room yang bisa mengganti modal awal perang*`,m, {contextInfo : {mentionedJid : [conn.war[m.chat][0].user]}})
+      return conn.reply(m.chat,`*Only @${conn.war[m.chat][0].user.split('@')[0]} as a room maker that can replace the initial capital of war*`,m, {contextInfo : {mentionedJid : [conn.war[m.chat][0].user]}})
     }
   }
 
