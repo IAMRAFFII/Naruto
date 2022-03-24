@@ -3,7 +3,7 @@ let fs = require('fs')
 let path = require('path')
 let { spawn } = require('child_process')
 
-const defaultLang = 'hi'
+const defaultLang = 'en'
 let handler = async (m, { conn, args }) => {
 
   let lang = args[0]
@@ -29,7 +29,7 @@ handler.command = /^g?tts$/i
 
 module.exports = handler
 
-function tts(text, lang = 'hi') {
+function tts(text, lang = 'en') {
   console.log(lang, text)
   return new Promise((resolve, reject) => {
     try {
